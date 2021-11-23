@@ -10,7 +10,7 @@ export const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Meth app{" "}
+          MeTH app{" "}
           <span className={styles.logo}>
             <Image src="/logo.svg" alt="Vercel Logo" width={20} height={20} />
           </span>
