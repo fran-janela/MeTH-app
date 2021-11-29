@@ -4,10 +4,10 @@
 }
 
 .main {
+  /* background-color: black; */
   min-height: 100vh;
   width: 100%;
-  padding: 0;
-  margin-top: 60px;
+  padding-top: 50px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,106 @@
   align-items: center;
 }
 
-.calcContainer {
-  min-height: 100vh;
+.calculatorGrid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculatorGrid button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+}
+
+.spanTwo {
+  grid-column: span 2;
+}
+
+.output {
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  margin: 2px;
+  grid-column: 1 / -1;
+  background-color: rgb(52, 52, 52);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
+}
+
+.output .previousOperand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .currentOperand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Style padrÃ£o dos botÃµes e animaÃ§Ãµes */
+.btn {
+  position: relative;
+  margin: 2px;
+  display: block;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, 0.3);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btnDisplayFunctions {
+  background-color: rgb(194, 194, 194);
+}
+
+.btnDisplayFunctions:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.btnOperations {
+  background-color: rgb(255, 155, 34);
+}
+
+.btnOperations:hover {
+  background-color: rgb(255, 167, 34);
 }
