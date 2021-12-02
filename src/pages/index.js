@@ -2,7 +2,6 @@ import { Footer } from "../components/footer";
 import styles from "../styles/Home.module.css";
 import { Toolbar } from "../components/toolbar";
 import { useState } from "react";
-import Head from "next/head";
 
 export const Home = () => {
   const [currentOperand, setCurrentOperand] = useState("");
@@ -84,11 +83,6 @@ export const Home = () => {
 
   return (
     <>
-      <Head>
-        <title>MeTH</title>
-        <meta name="description" content="math app with e from euler" />
-        <link rel="icon" href="/logo.ico" />
-      </Head>
       <div className={styles.container}>
         <Toolbar />
         <main className={styles.main}>
