@@ -1,0 +1,30 @@
+/* >>> if token >>> */
+.select {}
+
+.chatContainer {}
+
+.rightChatBubble {}
+
+.rightMsgTime {}
+
+.rightMsgSeen {}
+
+.leftChatBubble {}
+
+.lefttMsgTime {}
+
+.lefttMsgSeen {}
+
+.form {}
+
+/* <<< if token <<< */
+
+
+/* >>> if !token >>>*/
+.container {}
+
+.form {}
+
+.errorBox {}
+
+/* <<< if !token <<<*/

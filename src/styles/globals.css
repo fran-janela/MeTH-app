@@ -15,46 +15,58 @@ a {
   box-sizing: border-box;
 }
 
-/* Style padrÃ£o dos botÃµes e animaÃ§Ãµes */
-.btn {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-width: 0;
+button {
+  border-radius: 20px;
+  border: 1px solid #180f10;
+  background-color: #180f10;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:active {
+  transform: scale(0.944);
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+button:focus {
   outline: none;
-  border-radius: 50%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: var(--lightblue);
-  transition: background-color 0.3s;
 }
 
-.btn > * {
-  position: relative;
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  text-align: center;
 }
 
-.btn:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 0;
-  padding-top: 0;
-  border-radius: 100%;
-  background-color: rgba(236, 240, 241, 0.3);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+input, select {
+  border-radius: 20px;
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
 }
 
-.btn:active:before {
-  width: 120%;
-  padding-top: 120%;
-  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-}
-
-.btn:hover {
-  cursor: pointer;
+select {
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
 }

@@ -1,0 +1,116 @@
+/* >>> if !user >>> */
+.container {
+    margin-top: 55px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.errorBox {}
+
+/* <<< if !user <<<*/
+
+/* >>> if user >>> */
+.logout {
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    margin-top: 70px;
+    height: 45vh;
+    overflow-y: auto;
+    padding: 10px 15px;
+}
+
+.content {
+    margin: unset;
+}
+
+
+
+/* >>> right >>> */
+.rightChatBubble {
+    place-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #00800073;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.rightInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rightMsgTime {
+    margin: unset;
+}
+
+.rightMsgSeen {
+    margin: unset;
+}
+
+/* <<< right <<< */
+
+
+
+/* >>> left >>> */
+
+.leftChatBubble {
+    place-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #808080b0;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.leftInfos {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftMsgTime {
+    margin: unset;
+}
+
+/* <<< left <<<*/
+
+
+
+.sendMsg {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.inputMsg {
+    width: 45vw;
+    margin: auto;
+}
+
+.toggle {}
+
+/* <<< if user <<<*/
