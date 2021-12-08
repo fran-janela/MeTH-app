@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Test chat with admin
-- To test the chat feature, first you must create a superuser on our Django REST api with the following command: `docker-compose run --rm api sh -c "python manage.py createsuperuser"`
+- To test the chat feature, first you must create a superuser on our Django REST api with the following command (run it on the **backend** folder): `docker-compose run --rm api sh -c "python manage.py createsuperuser"`
 - Next, sign up to the app, and while on the chat page, open a private tab and log in with the superuser you just created on the following URL: `http://localhost:3000/suport/admin`
 - Finally, you can test the chat feature by yourself!
 <img src=img/img3.png style='height:350px; width:auto'>
