@@ -7,27 +7,6 @@ import { EmailForm } from "../../components/emailForm";
 export const Suport = () => {
   const router = useRouter();
   const { slug } = router.query;
-
-  if (slug === "chat") {
-    return (
-      <>
-        <div className={styles.container}>
-          <Toolbar />
-          <main className={styles.main}>
-            <div className={styles.changeSuport}>
-              <button
-                className={`${styles.btn} ${styles.btnChangeSlug}`}
-                onClick={() => router.push("/suport/email")}
-              >
-                EMAIL
-              </button>
-            </div>
-          </main>
-          <Footer />
-        </div>
-      </>
-    );
-  }
   return (
     <>
       <div className={styles.container}>

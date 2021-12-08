@@ -87,3 +87,26 @@
   background-color: rgb(255, 155, 34);
   color: white;
 }
+
+.subjectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subjectInput {
+  width: 400px;
+}
+
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bodyTextArea {
+  width: 400px;
+  height: 300px;
+}

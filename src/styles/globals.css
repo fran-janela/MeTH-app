@@ -51,7 +51,9 @@ form {
   text-align: center;
 }
 
-input, select {
+input,
+textarea,
+select {
   border-radius: 20px;
   background-color: #eee;
   border: none;

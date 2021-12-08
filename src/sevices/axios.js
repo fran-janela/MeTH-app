@@ -5,7 +5,7 @@ export function getAPIClient() {
   const { "api.accessToken": accessToken } = parseCookies();
 
   const api = axios.create({
-    baseURL: "http://0.0.0.0:8000",
+    baseURL: "http://ec2-3-137-191-178.us-east-2.compute.amazonaws.com",
   });
 
   api.interceptors.request.use((config) => {

@@ -11,7 +11,7 @@ export const EmailForm = () => {
     // console.log(event.target[1].value);    Body
     const myApiResponse = await axios
       .post(
-        `${process.env.NEXT_PUBLIC_API_HOST}/email/send/`,
+        `http://ec2-3-137-191-178.us-east-2.compute.amazonaws.com/email/send/`,
         {
           subject: event.target[0].value,
           body: event.target[1].value,
@@ -23,8 +23,9 @@ export const EmailForm = () => {
         }
       )
       .then((res) => res.data)
-      // .then((e) => console.log(e))
+      .then((e) => console.log(e))
       .catch(() => null);
+    router.push("/");
   }
 
   return (

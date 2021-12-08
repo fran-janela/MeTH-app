@@ -7,7 +7,13 @@ export const Toolbar = () => {
     <div className={styles.main}>
       <div onClick={() => router.push("/")}>Home</div>
       <div onClick={() => router.push("/suport/email")}>Suport</div>
-      <div onClick={() => router.push("/credits")}>Credits</div>
+      <div
+        onClick={() =>
+          (window.location.href = "https://github.com/fran-janela/MeTH-app")
+        }
+      >
+        Credits
+      </div>
     </div>
   );
 };
