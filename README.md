@@ -23,6 +23,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <img src=img/img4.png style='height:350px; width:auto'>
 
 
+## Send Email to administrator
+- Only available on deploy, not on local
+
+
 ## Deploy URL
 - It is required to allow `Insecure content` within the browser, so that requests to the aws deployed Django Rest API are accepted.
 <img src=img/img1.png style='height:350px; width:auto'>
