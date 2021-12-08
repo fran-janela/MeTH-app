@@ -21,4 +21,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <img src=img/img2.png style='height:350px; width:auto'>
 
 
-- https://meth-xi.vercel.app/
+- https://meth-app.vercel.app/
