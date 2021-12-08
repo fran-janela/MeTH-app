@@ -1,6 +1,6 @@
 import { Footer } from "../../components/footer";
-import styles from "../../styles/Suport.module.css";
 import { Toolbar } from "../../components/toolbar";
+import styles from "../../styles/Suport.module.css";
 import { useRouter } from "next/router";
 import { EmailForm } from "../../components/emailForm";
 
@@ -14,7 +14,6 @@ export const Suport = () => {
         <div className={styles.container}>
           <Toolbar />
           <main className={styles.main}>
-            <p>Lugar para o CHAT!</p>
             <div className={styles.changeSuport}>
               <button
                 className={`${styles.btn} ${styles.btnChangeSlug}`}
